@@ -1,14 +1,9 @@
 import React from 'react';
 
-import './styles.css'
-
+import './styles.css';
 
 function Loading() {
-    return (
-        <div className='loading'>
-            Cargando...
-        </div>
-    );
+  return <div className="loading">Cargando...</div>;
 }
 
 export default Loading;

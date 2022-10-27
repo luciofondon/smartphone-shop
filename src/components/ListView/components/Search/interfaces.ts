@@ -1,3 +1,3 @@
 export interface ISearch {
-    handleChangeFilter: (text: string) => void;
+  handleChangeFilter: (text: string) => void;
 }

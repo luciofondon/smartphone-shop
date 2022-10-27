@@ -1,14 +1,9 @@
 import React from 'react';
 
-import './styles.css'
+import './styles.css';
 
 const EmptyState = () => {
-
-    return (
-        <div className='empty-state'>
-            No hay datos para mostrar
-        </div>
-    );
-}
+  return <div className="empty-state">No hay datos para mostrar</div>;
+};
 
 export default EmptyState;

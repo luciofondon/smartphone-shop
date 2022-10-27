@@ -1,4 +1,4 @@
 export interface IItemDescriptrionDetail {
-    label: string;
-    value: string;
+  label: string;
+  value: string;
 }

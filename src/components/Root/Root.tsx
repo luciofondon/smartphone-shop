@@ -1,28 +1,28 @@
 import React, { createContext } from 'react';
-import { Outlet } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
 
 import Header from '../Header';
 import { IProductContext } from './interfaces';
 import useRoot from './useRoot';
-import './styles.css'
+import './styles.css';
 
 export const ProductContext = createContext<IProductContext>({
-    count: 0,
-    handleAdd: (product) => { }
-})
+  count: 0,
+  handleAdd: () => {},
+});
 
 const Root = () => {
-    const {
-        states: { countProducts },
-        actions: { handleClickAddProduct }
-    } = useRoot();
+  const {
+    states: { countProducts },
+    actions: { handleClickAddProduct },
+  } = useRoot();
 
-    return (
-        <ProductContext.Provider value={{ count: countProducts, handleAdd: handleClickAddProduct }}>
-            <Header />
-            <Outlet />
-        </ProductContext.Provider>
-    );
-}
+  return (
+    <ProductContext.Provider value={{ count: countProducts, handleAdd: handleClickAddProduct }}>
+      <Header />
+      <Outlet />
+    </ProductContext.Provider>
+  );
+};
 
 export default Root;

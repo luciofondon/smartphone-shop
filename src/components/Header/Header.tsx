@@ -4,24 +4,18 @@ import { Menu as MenuIcon, AddShoppingCart as AddShoppingCartIcon } from '@mui/i
 
 import { ProductContext } from '../Root/Root';
 import { Link } from 'react-router-dom';
-import './styles.css'
+import './styles.css';
 
 const Header = () => {
   const { count } = useContext(ProductContext);
 
   return (
-    <header className='header'>
-      <div className='title'>
-        <Link to={'/list'}>
-          Smartphone-Shop
-        </Link>
+    <header className="header">
+      <div className="title">
+        <Link to={'/list'}>Smartphone-Shop</Link>
       </div>
-      <div className='shopping-cart'>
-        <IconButton
-          size="large"
-          aria-label="show 17 new notifications"
-          color="inherit"
-        >
+      <div className="shopping-cart">
+        <IconButton size="large" aria-label="show 17 new notifications" color="inherit">
           <Badge badgeContent={count} color="error">
             <AddShoppingCartIcon />
           </Badge>
@@ -50,9 +44,8 @@ const Header = () => {
           </Toolbar>
         </AppBar>
       </Box> */}
-
     </header>
   );
-}
+};
 
 export default Header;

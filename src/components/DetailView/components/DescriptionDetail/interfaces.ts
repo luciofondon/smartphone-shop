@@ -1,5 +1,5 @@
-import { IProductDetail } from "../../interfaces";
+import { IProductDetail } from '../../interfaces';
 
 export interface IDescriptionDetail {
-    product: IProductDetail;
+  product: IProductDetail;
 }
