@@ -13,7 +13,11 @@
         }
     },
     "plugins": [
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "react",
+        "react-hooks",
+        "prettier",
+        "jest"
     ],
     "settings": {
         "react": {
