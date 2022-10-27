@@ -4,7 +4,7 @@ import { IProductAdd, IProductAddResponse, IUseRootResponse } from './interfaces
 
 const useRoot = (): IUseRootResponse => {
   const [products, setProducts] = useState<string[]>([]);
-  const [count, setCount] = useState<number>(0);
+  const [count, setCount] = useState<number>(20);
 
   const handleClickAddProduct = async (product: IProductAdd) => {
     setProducts([...products, product.id]);

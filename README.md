@@ -43,12 +43,21 @@ npm run test:update
 ```
 
 
-## Coverage
+# Coverage
 
 Automáticamente se generará un informe con la cobertura del código que se puede abrir en el navegador con el siguiente fichero
 
 ```
 coverage/lcov-report/index.html
+```
+
+# Linter
+
+```
+npm run lint
+```
+```
+npm run lint:fix
 ```
 
 ## Build
