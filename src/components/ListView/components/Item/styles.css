@@ -1,0 +1,29 @@
+.item {
+    padding: 60px;
+    height: 200px;
+    box-sizing: border-box; 
+}
+
+.image {
+    height: 200px;
+    width: 100px;
+}
+
+
+
+
+.price {
+    font-size: 35px;
+}
+
+.img{
+    width: 40%;
+    height: 150px;
+    float:left;
+
+}
+
+.detail{
+    width: 60%;
+    float: right;
+}

@@ -1,0 +1,13 @@
+.title-description {
+    font-weight: bold;
+    float: left;
+}
+
+.value-description {
+    float: right;
+}
+
+.item-description {
+    width: 600px;
+    height: 30px;
+}

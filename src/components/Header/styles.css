@@ -1,0 +1,27 @@
+header {
+    background-color: #3323e0;
+    height: 70px;
+    position: sticky;
+    top: 0;
+}
+
+.shopping-cart {
+    float: right;
+    padding-right: 40px;
+    padding-top: 5px;
+    color: azure;
+
+}
+
+.title {
+    float: left;
+    color: azure;
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
