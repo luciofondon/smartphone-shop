@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import Header from '../Header';
 import { IProductContext } from './interfaces';
 import useRoot from './useRoot';
+import './styles.css'
 
 export const ProductContext = createContext<IProductContext>({
     count: 0,

@@ -10,8 +10,6 @@ import ListView from './components/ListView';
 import ErrorPage from './components/ErrorPage';
 import Root from './components/Root';
 
-
-
 const router = createBrowserRouter([
     {
         path: "/",
@@ -32,9 +30,6 @@ const router = createBrowserRouter([
         ],
     },
 ]);
-
-
-
 
 ReactDOM.render(
     <React.StrictMode>
