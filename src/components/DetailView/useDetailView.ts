@@ -21,7 +21,7 @@ const useDetailView = (): IUseDetailViewResponse => {
       const data = await fetch(`${BASE_URL}/api/product/${productId}`);
       setProduct(await data.json());
     })();
-  }, []);
+  }, [productId]);
 
   return {
     states: {

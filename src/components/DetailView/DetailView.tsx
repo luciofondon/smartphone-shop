@@ -11,6 +11,7 @@ const DetailView = () => {
     states: { product },
     actions: { handleClickAddProduct },
   } = useDetailView();
+  
 
   if (!product) {
     return <Loading />;
