@@ -2,14 +2,16 @@ import { useState } from 'react';
 
 import { IProductAdd, IProductAddResponse, IUseRootResponse } from './interfaces';
 
+const BASE_URL = process.env.REACT_APP_ENDPOINT;
+
 const useRoot = (): IUseRootResponse => {
   const [products, setProducts] = useState<string[]>([]);
-  const [count, setCount] = useState<number>(20);
+  const [count, setCount] = useState<number>(0);
 
   const handleClickAddProduct = async (product: IProductAdd) => {
     setProducts([...products, product.id]);
 
-    const rawResponse = await fetch('https://front-test-api.herokuapp.com/api/cart', {
+    const rawResponse = await fetch(`${BASE_URL}/api/cart`, {
       method: 'POST',
       headers: {
         Accept: 'application/json',

@@ -5,6 +5,8 @@ import { ProductContext } from '../Root/Root';
 
 import { IProductDetail, IUseDetailViewResponse } from './interfaces';
 
+const BASE_URL = process.env.REACT_APP_ENDPOINT;
+
 const useDetailView = (): IUseDetailViewResponse => {
   const [product, setProduct] = useState<IProductDetail | null>(null);
   const { handleAdd } = useContext(ProductContext);
@@ -16,7 +18,7 @@ const useDetailView = (): IUseDetailViewResponse => {
 
   useEffect(() => {
     (async () => {
-      const data = await fetch(`https://front-test-api.herokuapp.com/api/product/${productId}`);
+      const data = await fetch(`${BASE_URL}/api/product/${productId}`);
       setProduct(await data.json());
     })();
   }, []);
